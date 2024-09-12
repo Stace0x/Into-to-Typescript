@@ -1,47 +1,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Header from "@/components/Header/Header";
+import NavCard from "@/components/NavCards/NavCard";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <header className="header">
-        <h1>Beginners Guild to Typescript</h1>
-      </header>
-      
       <main className={styles.main}>
-        <section className={styles.navContainer}>
-          <div className={styles.navCard}>
-            <h2>What is Typescript</h2>
-            <div className={styles.cardInfo}>
-              <li>
-              <img className={styles.cardImage} src="guide-to-react\public\images\confusion-image-v2.png"></img>
-              <p>Why use Typescript</p>
-              </li>
-            </div>
-          </div>
-          <div className={styles.navCard}>
-            <h2>Typescript Fundamentals</h2>
-            <div className={styles.cardInfo}>
-              <li>
-                <img className={styles.cardImage} src="guide-to-react\public\images\confusion-image-v2.png"></img>
-                <p>How do we start writting Typescript</p>
-              </li>
-            </div>
-          </div>
-          <div className={styles.navCard}>
-            <h2>Uses to Typescript</h2>
-            <div className={styles.cardInfo}>
-              <li>
-              <img className={styles.cardImage} src="guide-to-react\public\images\confusion-image-v2.png"></img>
-              <p>How do we use it</p>
-              </li>
-            </div>
-          </div>
-        </section>
-        <article className={styles.textBody}>
+        <section className={styles.infoContainer}>
           <h2>What is Typescript?</h2>
-          
-        </article>
+          <article className={styles.pageInfo}>
+            <p>TypeScript is a syntactic superset of JavaScript which adds static typing.
+              This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.</p>
+          </article>
+        </section>
         
       </main>
       <footer className={styles.footer}>

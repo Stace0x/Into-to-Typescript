@@ -1,6 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
+
+import Header from "@/components/Header/Header";
+import NavCard from "@/components/NavCards/NavCard";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,7 +25,28 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Header />
+        <main>
+          <NavCard 
+            title="What is Typescript" 
+            imgSrc="/images/confusion-image-v2.png" 
+            text="Why use Typescript" 
+            href="/"
+          />
+          <NavCard 
+            title="Typescript Fundamentals" 
+            imgSrc="/images/studying-image-v1.png" 
+            text="How do we start writing Typescript" 
+            href="/typescript-fundamentals"
+          />
+          <NavCard 
+            title="Uses of Typescript" 
+            imgSrc="/images/trying-image-v1.png" 
+            text="How do we use Typescript" 
+            href="/typescript-uses"
+          />
+          {children}
+        </main>
       </body>
     </html>
   );
