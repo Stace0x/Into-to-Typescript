@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 import Header from "@/components/Header/Header";
-import NavCard from "@/components/NavCards/NavCard";
+import NavGroup from "@/components/NavGroupContainer/NavGroup";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,24 +27,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
         <main>
-          <NavCard 
-            title="What is Typescript" 
-            imgSrc="/images/confusion-image-v2.png" 
-            text="Why use Typescript" 
-            href="/"
-          />
-          <NavCard 
-            title="Typescript Fundamentals" 
-            imgSrc="/images/studying-image-v1.png" 
-            text="How do we start writing Typescript" 
-            href="/typescript-fundamentals"
-          />
-          <NavCard 
-            title="Uses of Typescript" 
-            imgSrc="/images/trying-image-v1.png" 
-            text="How do we use Typescript" 
-            href="/typescript-uses"
-          />
+          <NavGroup />
           {children}
         </main>
       </body>

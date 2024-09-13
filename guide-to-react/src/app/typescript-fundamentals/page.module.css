@@ -1,0 +1,22 @@
+.mainHeader {
+  background-color: #53b0fb;
+  margin:0px auto;
+  width: 70%;
+}
+
+.infoContainer {
+  padding-top: 30px;
+  background-color: white;
+}
+
+.text {
+  width: 70%;
+  margin:0px auto;
+  font-size: 15px;
+  color: #333; 
+  list-style: none;
+}
+
+.text li {
+  padding: 10px;
+}

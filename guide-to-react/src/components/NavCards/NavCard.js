@@ -1,10 +1,9 @@
 import styles from "./NavCard.module.css";
-import Link from "next/link";
 import Image from "next/image";
 
 export default function NavCard(props) {
   return (
-    <Link href={props.href} className={styles.navCardLink}>
+    <a href={`#${props.href}`} className={styles.navCardLink}>
       <section className={styles.navContainer}>
         <div className={styles.navCard}>
           <h2>{props.title}</h2>
@@ -19,7 +18,7 @@ export default function NavCard(props) {
           </div>
         </div>
       </section>
-    </Link>
+    </a>
   );
 }
 

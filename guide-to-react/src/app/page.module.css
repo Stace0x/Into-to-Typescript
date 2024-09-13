@@ -1,4 +1,4 @@
-.page {
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -29,10 +29,9 @@
 
 .main {
   display: flex;
-  padding: 1rem;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  text-align: center;
+  background-color: #4f1f1f;
 } 
 
 .main ol {
@@ -107,7 +106,7 @@ a.secondary {
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -122,8 +121,8 @@ a.secondary {
     text-decoration: underline;
     text-underline-offset: 4px;
   }
-}
-
+} */
+/* 
 @media (max-width: 600px) {
   .page {
     padding: 32px;
@@ -163,30 +162,84 @@ a.secondary {
   .logo {
     filter: invert();
   }
+} */
+
+
+.page{
+
 }
 
-.navContainer {
-  display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap to the next line */
-  gap: 1rem; /* Adds space between cards */
-  justify-content: center;
+
+.main {
   text-align: center;
+}
+
+
+.mainHeader {
+  background-color: #53b0fb;
+  margin:0px auto;
+  width: 70%;
+  padding: 7px;
+}
+
+.mainHeader2 {
+  background-color: #fbb355;
+  margin:0px auto;
+  width: 70%;
+  padding: 7px;
+}
+
+.mainHeader3 {
+  background-color: #fa6663;
+  margin:0px auto;
+  width: 70%;
+  padding: 7px;
 }
 
 .infoContainer {
-  text-align: center;
-  padding-top: 3rem;
-  /* Remove align-content: center, as it's not necessary here */
+  padding-top: 30px;
+  background-color: white;
 }
 
-.infoContainer h2 {
-  background-color: #9bc096;
-  padding: 10px;
-  width: 60%;
-  margin: 0 auto; /* This will center the h2 horizontally */
-  border-radius: 10px;
+.pageInfo{
+ padding-top: 15px;
 }
 
-.pageInfo {
+.text {
+  width: 55%;
+  margin:0px auto;
+  font-size: 17px;
+  color: #333; 
+  list-style: none;
+  padding: 15px;
+}
 
+.text li {
+  padding: 5px 10px 10px 10px;
+
+}
+
+
+.codeTag1 {
+  background-color: #edebeb;
+  border-color: #7c7979;
+  padding: 15px;
+  border-radius: 4px;
+  max-width: 40%; 
+  margin: 20px auto; 
+  display: block; 
+  font-size: 17px;
+
+}
+
+.codeTag2 {
+  background-color: #edebeb;
+  border-color: #7c7979;
+  padding: 15px;
+  border-radius: 4px;
+  max-width: 40%; 
+  margin: 20px auto; 
+  display: block; 
+  font-size: 17px;
+  text-align: left;
 }
