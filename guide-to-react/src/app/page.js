@@ -21,7 +21,7 @@ export default function Home() {
           </article>
         </section>
 
-        <h2 className={styles.mainHeader2}>How write Typescript</h2>
+        <h2 className={styles.mainHeader2}>How to write Typescript</h2>
         <section id="section-2" className={styles.infoContainer}>
           <article className={styles.pageInfo}>
               <ul className={styles.text}> 
@@ -59,7 +59,7 @@ let age: number = 30;
 let isStudent: boolean = true;
 
 function greet(name: string): void {
-    console.log("Hello, " + name + "!");
+console.log("Hello, " + name + "!");
 }
 
 greet("Alice");`}
@@ -94,7 +94,8 @@ greet("Alice");`}
               </ul>
                 <pre className={styles.codeTag2}> 
                   <code>
-                    {`TypeScript
+                    {`TypeScript:
+
     interface Person {
         name: string;
         age: number;
@@ -105,7 +106,7 @@ greet("Alice");`}
         name: "John Doe",
         age: 30,
         greet() {
-            console.log("Hello, my name is " + this.name);
+        console.log("Hello, my name is " + this.name);
         }
     };`}
                   </code> 

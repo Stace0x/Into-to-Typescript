@@ -166,12 +166,15 @@ a.secondary {
 
 
 .page{
-
+  background-color: #27263c;
+  color: white;
 }
 
 
 .main {
   text-align: center;
+  background-color: #27263c;
+  color: white;
 }
 
 
@@ -180,6 +183,7 @@ a.secondary {
   margin:0px auto;
   width: 70%;
   padding: 7px;
+  border-radius: 10px;
 }
 
 .mainHeader2 {
@@ -187,6 +191,7 @@ a.secondary {
   margin:0px auto;
   width: 70%;
   padding: 7px;
+  border-radius: 10px;
 }
 
 .mainHeader3 {
@@ -194,11 +199,14 @@ a.secondary {
   margin:0px auto;
   width: 70%;
   padding: 7px;
+  border-radius: 10px;
 }
 
 .infoContainer {
   padding-top: 30px;
   background-color: white;
+  background-color: #27263c;
+  color: white;
 }
 
 .pageInfo{
@@ -212,6 +220,7 @@ a.secondary {
   color: #333; 
   list-style: none;
   padding: 15px;
+  color: white;
 }
 
 .text li {
@@ -221,7 +230,7 @@ a.secondary {
 
 
 .codeTag1 {
-  background-color: #edebeb;
+  background-color: #696782;
   border-color: #7c7979;
   padding: 15px;
   border-radius: 4px;
@@ -229,11 +238,13 @@ a.secondary {
   margin: 20px auto; 
   display: block; 
   font-size: 17px;
+  color: #333;
+
 
 }
 
 .codeTag2 {
-  background-color: #edebeb;
+  background-color: #696782;
   border-color: #7c7979;
   padding: 15px;
   border-radius: 4px;
@@ -242,4 +253,5 @@ a.secondary {
   display: block; 
   font-size: 17px;
   text-align: left;
+  color: #333;
 }
